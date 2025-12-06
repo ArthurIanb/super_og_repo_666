@@ -11,8 +11,8 @@ void reverse_ints_from_count(int* str, int from, int count){
 void shift_arr(int *arr, int sz, int shift){
     reverse_ints_from_count(arr, 0, sz);
     reverse_ints_from_count(arr, 0, shift);
-    reverse_ints_from_count(arr, shift, sz - shift);
 }
+    reverse_ints_from_count(arr, shift, sz - shift);
 
 int main(){
     int arr[] = {1, 2, 3, 4, 5, 6, 7, 8};

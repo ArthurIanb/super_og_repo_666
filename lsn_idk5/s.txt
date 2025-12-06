@@ -10,4 +10,6 @@ byte4  byte3  byte2   byte1
 
 char in[3]
 base64[0] = (in[0] << 2) >> 2 или byte1 & (0x3F или 63 или 0b111111)
+base64[1] = (in[0] >> 6) | ((in[1] & 0xF) << 2)
+base64[2] = ()
 

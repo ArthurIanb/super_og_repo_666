@@ -1,12 +1,12 @@
 #include <iostream>
 
 
-
+template <typename T, typename TT>
+void tt(T x, TT y){
+    std::cout << x << '\n';
+    std::cout << y;
+}
 
 int main(){
-    int arr[3][3] = {{1, 2}, {}, {1, 2, 3}};
-    std::cout << arr[0,1];
-    std::cout << '\n' << 1, 3;
-    char str[6] = "hello";
-    std::cout << '\n' << str;
+    tt<float, double>(3, 3.11);
 }
